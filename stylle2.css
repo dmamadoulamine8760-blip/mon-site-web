@@ -1,0 +1,60 @@
+/* HEADER */
+.site-header {
+  background-color: #c4623a;       /* Fond orange/brun */
+  color: white;                    /* Texte blanc */
+  padding: 15px 30px;              /* Espacement interne */
+  display: flex;                   /* Flexbox pour aligner titre et menu */
+  justify-content: space-between;  /* Titre à gauche, menu à droite */
+  align-items: center;
+}
+
+.site-header h2 {
+  margin: 0;
+}
+
+.site-header nav a {
+  color: white;
+  text-decoration: none;
+  margin-left: 20px;
+  font-weight: bold;
+}
+
+.site-header nav a:hover {
+  text-decoration: underline;
+}
+
+/* FOOTER */
+.site-footer {
+    background-color: #c4623a; /* Fond sombre */
+    color: white;
+    text-align: center; /* Texte centré */
+    padding: 20px;
+    margin-top: 40px;
+}
+
+/* CONTENU PRINCIPAL (déjà vu) */
+.page-container {
+  display: flex;
+  gap: 40px;
+  max-width: 1000px;
+  width: 90%;
+  margin: 40px auto;               /* Ajoute un espace sous le header */
+}
+
+.contact-container {
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+  width: 350px;
+}
+
+/* Bloc droit : texte */
+.extra-content {
+  flex: 1;                   /* prend le reste de l’espace */
+  background: rgba(255,255,255,0.8);
+  padding: 30px;
+  border-radius: 10px;
+  color: #3b2a1a;
+}
+

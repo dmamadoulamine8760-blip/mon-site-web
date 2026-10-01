@@ -1,0 +1,294 @@
+
+
+/* Style du menu en noire avec les tirets qui donne un look profesionnel et qui sadapte a tous les istes  */
+.navbar {
+    display: flex; /* aligne les éléments en ligne */
+    justify-content: space-between; /* espace entre logo,
+menu et bouton */
+    align-items: center; /* centre verticalement */
+    background-color: #000; /* fond noir */
+    padding: 15px 30px; /* marges internes */
+    .navbar {
+        position: relative; /* nécessaire pour que le hamburger se place par rapport à la navbar */
+    }
+}
+
+/* Logo */
+.logo {
+    color: #fff; /* texte blanc */
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* Menu principal */
+.menu {
+    list-style: none; /* enlève les puces */
+    display: flex; /* affiche en ligne */
+    gap: 20px; /* espace entre les liens */
+    margin: 0;
+    padding: 0;
+}
+
+    .menu li a {
+        color: #fff; /* texte blanc */
+        text-decoration: none; /* enlève le soulignement */
+        font-size: 16px;
+    }
+
+        .menu li a:hover {
+            color: #00aaff; /* couleur bleue au survol */
+        }
+
+/* Bouton bleu */
+.btn {
+    background-color: #007bff; /* bleu */
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px; /* coins arrondis */
+    font-weight: bold;
+}
+
+    .btn:hover {
+        background-color: #0056b3; /* bleu foncé au survol */
+    }
+
+/* Icône hamburger (cachée par défaut sur grand écran) */
+.hamburger {
+    position: absolute; /* sort du flux normal */
+    top: 15px; /* distance du haut */
+    right: 20px; /* distance du bord droit */
+    font-size: 26px;
+    cursor: pointer;
+    color: #fff;
+}
+
+
+/* Responsive : quand l’écran est petit (max 768px) */
+@media (max-width: 768px) {
+    .menu {
+        display: none; /* cache le menu par défaut */
+        flex-direction: column; /* affiche en colonne quand visible */
+        background-color: #000;
+        position: absolute; /* position flottante */
+        top: 60px; /* sous la barre */
+        right: 30px; /* collé à droite */
+        padding: 10px;
+    }
+
+        .menu.show {
+            display: flex; /* affiche le menu quand on clique sur hamburger */
+        }
+
+    .hamburger {
+        display: block; /* montre le hamburger sur mobile */
+    }
+
+    .btn {
+        display: none; /* cache le bouton bleu sur mobile */
+    }
+}
+/* Style du menu en noire avec les tirets qui donne un look profesionnel et qui sadapte a tous les istes  */
+
+
+
+/* Sections */
+section {
+    padding: 60px 20px; /* espace sous le menu fixe */
+    text-align: center;
+}
+
+/* Accueil */
+#accueil {
+    background: #000;
+    color: #fff;
+}
+
+/* À propos */
+#apropos {
+    background: #f5f5f5;
+    color: #333;
+}
+
+/* Produits */
+/* Section avec image de fond */
+/* Hero moderne */
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: url("images/fond-page2.jpg") no-repeat center center;
+    background-size: cover;
+    min-height: 80vh;
+    padding: 40px;
+    color: black;
+}
+
+.hero-text {
+    flex: 1;
+    max-width: 50%;
+    text-align: left;
+}
+
+.hero-image img {
+    max-width: 300px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .menu {
+        display: none;
+        flex-direction: column;
+        background: #000;
+        position: absolute;
+        top: 60px;
+        right: 20px;
+        padding: 10px;
+    }
+
+        .menu.show {
+            display: flex;
+        }
+
+    .hamburger {
+        display: block;
+    }
+
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-text, .hero-image {
+        max-width: 100%;
+    }
+
+        .hero-image img {
+            max-width: 200px;
+            margin-top: 20px;
+        }
+    /* jai creer une page html + stylle css
+et sa fonctionne comme une seul page html et plusieurs sections pour differencier et modifier le stylee sans problemme et chaque section contient des  sous sections deja integrer pour stylliser correctement il le faut comme sur notre cas " <div class="hero-text"> et pour notre image " <div class="hero-image"> "
+
+
+
+  /* ======style moderne pour pied de page  ====== */
+    /* ====== Footer ====== */
+    .footer-pro {
+        background: #111;
+        color: #eee;
+        padding: 40px 20px;
+    }
+
+    .footer-container {
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+        text-align: center; /* texte centré dans chaque colonne */
+    }
+
+    .footer-column {
+        flex: 1;
+        min-width: 200px;
+    }
+
+        .footer-column h3 {
+            margin-bottom: 15px;
+            color: #fff;
+        }
+
+        .footer-column ul {
+            list-style: none;
+            padding: 0;
+        }
+
+            .footer-column ul li {
+                margin-bottom: 8px;
+            }
+
+                .footer-column ul li a {
+                    color: #eee;
+                    text-decoration: none;
+                }
+
+                    .footer-column ul li a:hover {
+                        color: #007bff;
+                    }
+
+    .footer-button {
+        display: inline-block;
+        margin-top: 10px;
+        background: #007bff;
+        color: #fff;
+        padding: 8px 15px;
+        border-radius: 5px;
+        text-decoration: none;
+    }
+
+    .footer-bottom {
+        text-align: center;
+        margin-top: 30px;
+        border-top: 1px solid #333;
+        padding-top: 15px;
+        font-size: 0.9rem;
+        color: #aaa;
+    }
+
+
+
+
+
+
+
+
+
+
+
+    /*Ajoute un media query pour mobile juste pour eux deux: /*
+  /* Mode téléphone */
+    @media (max-width: 768px) {
+        /* Menu */
+        .navbar {
+            flex-direction: column; /* empile logo, menu, bouton */
+            align-items: center; /* centre tout */
+            text-align: center;
+        }
+
+        .menu {
+            flex-direction: column; /* liens en colonne */
+            gap: 10px;
+            margin-top: 10px;
+        }
+
+        .btn {
+            margin-top: 15px;
+        }
+
+        /* Footer */
+        .footer-container {
+            flex-direction: column; /* colonnes empilées */
+            align-items: center; /* centre tout */
+            text-align: center;
+        }
+
+        .footer-column {
+            margin-bottom: 20px;
+        }
+
+        /* Produits (hero section) */
+        .hero {
+            flex-direction: column; /* texte au-dessus, image en dessous */
+            text-align: center;
+        }
+
+        .hero-text, .hero-image {
+            max-width: 100%;
+        }
+
+            .hero-image img {
+                max-width: 200px; /* réduit la taille de l’image */
+                margin-top: 20px;
+            }
+    }

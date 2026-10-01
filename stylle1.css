@@ -1,0 +1,59 @@
+/* HEADER */
+.site-header {
+    background-color: #c4623a; /* Fond orange/brun */
+    color: white; /* Texte blanc */
+    padding: 15px 30px; /* Espacement interne */
+    display: flex; /* Flexbox pour aligner titre et menu */
+    justify-content: space-between; /* Titre à gauche, menu à droite */
+    align-items: center;
+}
+
+    .site-header h2 {
+        margin: 0;
+    }
+
+    .site-header nav a {
+        color: white;
+        text-decoration: none;
+        margin-left: 20px;
+        font-weight: bold;
+    }
+
+        .site-header nav a:hover {
+            text-decoration: underline;
+        }
+        
+        
+        
+        /* Styles spécifiques à la Page 1 */
+body.page1 {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+	text-align: center;
+    background: #f5f5f5;
+    color: #222;
+}
+
+
+
+/* Styles spécifiques à la Page 2 */
+body.page2 {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+	text-align: center;
+    background: #f5f5f5;
+    color: #222;
+}
+
+
+
+/* FOOTER */
+.site-footer {
+    background-color: #c4623a; /* Fond sombre */
+    color: white;
+    text-align: center; /* Texte centré */
+    padding: 20px;
+    margin-top: 40px;
+}
